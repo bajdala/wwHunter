@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 07.04.2015 16:41:45 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="bj.wwHunter.v1.model.Gamers" table="gamers" catalog="ww_hunter">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="nickName" type="string">
+            <column name="nickName" length="100" not-null="true" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="lastName" length="100" not-null="true" />
+        </property>
+        <property name="firstName" type="string">
+            <column name="firstName" length="100" not-null="true" />
+        </property>
+        <property name="sex" type="string">
+            <column name="sex" length="6" not-null="true" />
+        </property>
+        <property name="birthday" type="string">
+            <column name="birthday" length="19" not-null="true" />
+        </property>
+        <property name="photoPath" type="string">
+            <column name="photoPath" not-null="true" />
+        </property>
+        <property name="whiteZones" type="string">
+            <column name="whiteZones" not-null="true" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="100" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="100" not-null="true" />
+        </property>
+        <property name="lifeCode" type="string">
+            <column name="lifeCode" length="100" not-null="true" />
+        </property>
+        <property name="dateTimeImmunitet" type="timestamp">
+            <column name="dateTimeImmunitet" length="19" not-null="true" />
+        </property>
+        <property name="idVictim" type="int">
+            <column name="idVictim" not-null="true" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="12" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

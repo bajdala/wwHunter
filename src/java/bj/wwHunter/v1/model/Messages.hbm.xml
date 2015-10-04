@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 07.04.2015 16:41:45 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="bj.wwHunter.v1.model.Messages" table="messages" catalog="ww_hunter">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="idGamer" type="int">
+            <column name="idGamer" not-null="true" />
+        </property>
+        <property name="idSender" type="int">
+            <column name="idSender" not-null="true" />
+        </property>
+        <property name="sender" type="string">
+            <column name="sender" length="6" not-null="true" />
+        </property>
+        <property name="dateTimeMessage" type="timestamp">
+            <column name="dateTimeMessage" length="19" not-null="true" />
+        </property>
+        <property name="textMessage" type="string">
+            <column name="textMessage" not-null="true" />
+        </property>
+        <property name="statusMessage" type="string">
+            <column name="statusMessage" length="7" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

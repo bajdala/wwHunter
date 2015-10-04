@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 07.04.2015 16:41:45 by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="bj.wwHunter.v1.model.Gameevents" table="gameevents" catalog="ww_hunter">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="dateTimeEvent" type="timestamp">
+            <column name="dateTimeEvent" length="19" not-null="true" />
+        </property>
+        <property name="idVictim" type="int">
+            <column name="idVictim" not-null="true" />
+        </property>
+        <property name="idHunter" type="int">
+            <column name="idHunter" not-null="true" />
+        </property>
+        <property name="label" type="string">
+            <column name="label" length="16" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

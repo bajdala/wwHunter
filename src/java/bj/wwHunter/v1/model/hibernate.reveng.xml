@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="ww_hunter"/>
+  <table-filter match-name="gameevents"/>
+  <table-filter match-name="news"/>
+  <table-filter match-name="gamers"/>
+  <table-filter match-name="penaltys"/>
+  <table-filter match-name="messages"/>
+</hibernate-reverse-engineering>
